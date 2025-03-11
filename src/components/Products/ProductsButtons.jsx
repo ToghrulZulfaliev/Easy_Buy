@@ -45,7 +45,7 @@ const ProductsButtons = () => {
         <div className="products-section">
             <div className="container mx-auto px-4">
                 <div className="products-title">
-                    <h2>Latest Products</h2>
+                    <h2 className='pt-5'>Latest Products</h2>
                     <hr className="section-divider" />
                 </div>
 
@@ -67,7 +67,7 @@ const ProductsButtons = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

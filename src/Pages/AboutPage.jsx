@@ -3,8 +3,8 @@ import React from 'react'
 const AboutPage = () => {
   return (
     <div>
-      <div className="container my-3 py-3">
-        <h1 className="text-center">About Us</h1>
+      <div className="container  mt-5 py-5 " >
+        <h1 className=" pt-5 text-center">About Us</h1>
         <hr />
         <p className="lead text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -58,7 +58,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

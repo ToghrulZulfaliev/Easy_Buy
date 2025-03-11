@@ -14,7 +14,7 @@ const BuyNow = ({ product }) => {
     return (
         <div className="container my-5">
             <div className="row">
-                <div className="col-md-6 mb-4">
+                <div className="col-md-6 mb-4 mt-5 pt-5">
                     <img
                         src={product.image}
                         alt={product.title}
@@ -24,7 +24,7 @@ const BuyNow = ({ product }) => {
                 </div>
                 <div className="col-md-6">
                     <h4 className="text-uppercase text-muted mb-3">{product.category}</h4>
-                    <h1 className="mb-4">{product.title}</h1>
+                    <h1 className="mb-4 mt-5 pt-5">{product.title}</h1>
                     <div className="d-flex align-items-center mb-3">
                         <span className="h5 mb-0 me-2">{product.rating.rate}</span>
                         <i className="fa fa-star text-warning"></i>

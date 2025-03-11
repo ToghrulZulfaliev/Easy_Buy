@@ -106,7 +106,7 @@ const Navbar = () => {
                                     <Link to="/register" className="btn btn-outline-dark m-2">
                                         <i className="fa fa-user-plus mr-1"></i> Register
                                     </Link>
-                                    <Link to="/cart" className="btn btn-outline-dark m-2">
+                                    <Link to="/cartbasket" className="btn btn-outline-dark m-2">
                                         <i className="fa fa-shopping-cart"></i> Cart ({totalQuantity})
                                     </Link>
                                 </>

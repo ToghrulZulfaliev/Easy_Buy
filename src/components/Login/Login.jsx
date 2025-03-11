@@ -54,7 +54,7 @@ const Login = () => {
                     resetForm();
                     dispatch(setAll({ access_token: data.access_token, user: data.user }));
 
-                    
+
                     setMessage({
                         type: 'success',
                         text: 'Login successful! Redirecting...'
@@ -87,7 +87,7 @@ const Login = () => {
 
     return (
         <div className="container my-3 py-3">
-            <h1 className="text-center">Login</h1>
+            <h1 className="text-center mt-5 pt-5">Login</h1>
             <hr />
             <div className="row my-4 h-100">
                 <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">

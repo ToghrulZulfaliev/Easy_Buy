@@ -37,7 +37,7 @@ export default function App() {
 
                 <SwiperSlide>
                     <img
-                        src="/images/new women.jpg"
+                        src="/images/newimages.jpg"
                         alt="Women's Collection"
                     />
                     <div className="slide-content">
