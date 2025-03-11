@@ -13,7 +13,7 @@ import CartPages from '../pages/CartPages';
 import BuyPage from '../pages/BuyPage';
 import { GetFromLocalStorage } from '../utils/storages/LocalStorage';
 import { setUser } from '../redux/features/authSlice';
-import { setToCard } from '../redux/features/CartSlice';
+
 
 
 const AppNavigator = () => {
