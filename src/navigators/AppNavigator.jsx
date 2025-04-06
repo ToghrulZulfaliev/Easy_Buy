@@ -8,13 +8,14 @@ import HomePage from "../Pages/HomePage";
 
 import ProductsPage from "../Pages/ProductsPage";
 
-import AboutPage from '../pages/AboutPage';
-import ContactPage from '../pages/ContactPage';
-import LoginPage from '../pages/LoginPage';
-import RegisterPage from '../pages/RegisterPage';
-import CartPages from '../pages/CartPages';
+import AboutPage from "../Pages/AboutPage";
 
-import BuyPage from '../pages/BuyPage';
+import ContactPage from '../Pages/ContactPage';
+import LoginPage from '../Pages/LoginPage';
+import RegisterPage from '../Pages/RegisterPage';
+import CartPages from '../Pages/CartPages';
+
+import BuyPage from '../Pages/BuyPage';
 import { GetFromLocalStorage } from '../utils/storages/LocalStorage';
 import { setUser } from '../redux/features/authSlice';
 import { getLocalStorageItems, setToCard } from '../redux/features/CartSlice';
