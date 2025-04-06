@@ -2,7 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Layout from '../components/Layout/Layout';
-import HomePage from "../pages/HomePage";
+import HomePage from "../Pages/HomePage";
+
 
 
 import ProductsPage from '../pages/ProductsPage';
