@@ -6,7 +6,8 @@ import HomePage from "../Pages/HomePage";
 
 
 
-import ProductsPage from '../pages/ProductsPage';
+import ProductsPage from "../Pages/ProductsPage";
+
 import AboutPage from '../pages/AboutPage';
 import ContactPage from '../pages/ContactPage';
 import LoginPage from '../pages/LoginPage';
