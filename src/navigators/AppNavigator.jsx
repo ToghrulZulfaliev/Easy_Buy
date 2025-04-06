@@ -13,11 +13,15 @@ import CartPages from '../pages/CartPages';
 import BuyPage from '../pages/BuyPage';
 import { GetFromLocalStorage } from '../utils/storages/LocalStorage';
 import { setUser } from '../redux/features/authSlice';
+import { getLocalStorageItems, setToCard } from '../redux/features/CartSlice';
 
 
 
 const AppNavigator = () => {
     const dispatch = useDispatch();
+    const { user } = useSelector(state => state.auth);
+
+
 
     useEffect(() => {
         const checkUser = async () => {
@@ -45,6 +49,11 @@ const AppNavigator = () => {
         checkUser();
     }, [dispatch]);
 
+    useEffect(() => {
+        dispatch(setToCard(getLocalStorageItems(user?.email)));
+    }, [user])
+
+
     return (
         <Routes>
             <Route path="/" element={<Layout />}>
@@ -57,13 +66,13 @@ const AppNavigator = () => {
                 <Route path="register" element={<RegisterPage />} />
                 <Route path="cartbasket" element={<CartPages />} />
                 <Route path="*" element={
-                    <div className="container text-center py-5">
-                        <h1>404 - Page Not Found</h1>
+                    <div className="container text-center py-5 mt-5">
+                        <h1 style={{ marginTop: 30 }}>404 - Page Not Found</h1>
                         <p>The page you are looking for doesn't exist.</p>
                     </div>
                 } />
             </Route>
-        </Routes>
+        </Routes >
     );
 };
 

@@ -9,23 +9,14 @@ const calculateTotals = (items) => {
     }), { quantity: 0, amount: 0 });
 };
 
-export const getLocalStorageItems = () => {
-    try {
-        const userId = JSON.parse(localStorage.getItem('user'))?.email;
-        if (!userId) {
-            const cartItems = localStorage.getItem('cartItems_guest');
-            return cartItems ? JSON.parse(cartItems) : [];
-        }
-        const cartItems = localStorage.getItem(`cartItems_${userId}`);
-        return cartItems ? JSON.parse(cartItems) : [];
-    } catch (error) {
-        console.error('Error loading cart:', error);
-        return [];
-    }
-};
+
+export const getLocalStorageItems = (email) => {
+    const cartItems = localStorage.getItem(`cartItems_${email ? email : "guest"}`);
+    return cartItems ? JSON.parse(cartItems) : [];
+}
 
 const initialState = {
-    items: getLocalStorageItems(),
+    items: [],
     totalAmount: 0,
     totalQuantity: 0,
     loading: false

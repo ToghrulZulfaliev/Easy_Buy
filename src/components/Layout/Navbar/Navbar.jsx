@@ -94,7 +94,7 @@ const Navbar = () => {
                                     >
                                         <i className="fa fa-sign-out-alt mr-1"></i> Logout
                                     </button>
-                                    <Link to="/cart" className="btn btn-outline-dark m-2">
+                                    <Link to="/cartbasket" className="btn btn-outline-dark m-2">
                                         <i className="fa fa-shopping-cart"></i> Cart ({totalQuantity})
                                     </Link>
                                 </>
