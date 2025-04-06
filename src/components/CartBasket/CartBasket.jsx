@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { updateQuantity, removeFromCart } from '../../redux/features/CartSlice';
-import './CartBasket.css';
+import './CartBasket.css'
 
 export default function CartBasket() {
     const dispatch = useDispatch();
